@@ -35,4 +35,4 @@ Main tables:
 
 ## Status
 
-Week 12 — repo set up, app working, docs in progress.
+Completed
