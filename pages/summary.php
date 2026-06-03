@@ -38,13 +38,13 @@ $result = $conn->query("
         <tr>
             <td><?= htmlspecialchars($row['name']) ?></td>
             <td><?= $row['total_entries'] ?></td>
-            <td>Rp <?= number_format($row['total_amount'], 0, ',', '.') ?></td>
+            <td>NT$<?= number_format($row['total_amount'], 0) ?></td>
         </tr>
         <?php endwhile; ?>
         <tr class="total">
             <td>Total</td>
             <td></td>
-            <td>Rp <?= number_format($grand_total, 0, ',', '.') ?></td>
+            <td>NT$<?= number_format($grand_total, 0) ?></td>
         </tr>
     </table>
     <br><a href="../index.php">← Back</a>

@@ -30,7 +30,7 @@ $categories = $conn->query("SELECT * FROM categories");
 <body>
     <h1>Add Expense</h1>
     <form method="POST" action="add.php">
-        <label>Amount (Rp)</label>
+        <label>Amount (NT$)</label>
         <input type="number" name="amount" required>
         <label>Description</label>
         <input type="text" name="description">

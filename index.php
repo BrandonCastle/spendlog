@@ -44,7 +44,7 @@ $result = $conn->query("
             <td><?= htmlspecialchars($row['date']) ?></td>
             <td><?= htmlspecialchars($row['description']) ?></td>
             <td><?= htmlspecialchars($row['category']) ?></td>
-            <td>Rp <?= number_format($row['amount'], 0, ',', '.') ?></td>
+            <td>NT$<?= number_format($row['amount'], 0) ?></td>
             <td class="actions">
                 <a href="pages/edit.php?id=<?= $row['id'] ?>">Edit</a>
                 <a href="pages/delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Delete this expense?')">Delete</a>

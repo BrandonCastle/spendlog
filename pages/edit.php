@@ -36,7 +36,7 @@ $categories = $conn->query("SELECT * FROM categories");
 <body>
     <h1>Edit Expense</h1>
     <form method="POST" action="edit.php?id=<?= $id ?>">
-        <label>Amount (Rp)</label>
+        <label>Amount (NT$)</label>
         <input type="number" name="amount" value="<?= $expense['amount'] ?>" required>
 
         <label>Description</label>
